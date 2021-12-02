@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node ./build/app.js 127.0.0.1 3001",
+    "deploy": "tsc && node ./build/app.js 192.168.0.150 3001"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tslint": "^6.1.3",
+    "typescript": "^4.2.3",
+    "@types/socket.io": "^2.1.13"
+  },
+  "dependencies": {
+    "socket.io": "^4.0.1"
+  }
+}
