@@ -18,7 +18,7 @@ class Timer {
   constructor(serverDate: number, interval: number) {
     this.serverDate = serverDate
     this.interval = interval
-    this.serverDrift = Date.now() - serverDate
+    this.serverDrift = (Date.now() - serverDate) % interval
   }
 
   start(callback: () => void) {
